@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - School Helper Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🚀 School Helper Pro</div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="navHome">Home</a>
+            <a href="tools.html" data-i18n="navTools">Tools</a>
+            <a href="about.html" class="active" data-i18n="navAbout">About</a>
+        </div>
+        <div class="nav-controls">
+            <select id="langSelect">
+                <option value="de">🇩🇪 DE</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="ru">🇷🇺 RU</option>
+            </select>
+            <button id="themeToggle" class="btn-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="card animate-fade text-center">
+            <h2 data-i18n="aboutProjectTitle">Über das Projekt</h2>
+            <p class="about-desc" data-i18n="aboutDesc">
+                School Helper Pro ist eine hochentwickelte, digitale Assistenz-Web-App, die entwickelt wurde, um Schülern bei der Organisation ihres Alltags zu helfen. Dieses Projekt deckt alle modernen Web-Kriterien ab.
+            </p>
+            
+            <hr class="separator">
+
+            <h3 data-i18n="techTitle">Genutzte Technologien:</h3>
+            <div class="tech-grid">
+                <div class="tech-badge">🌐 HTML5</div>
+                <div class="tech-badge">🎨 CSS3 (Flexbox/Grid/Variables)</div>
+                <div class="tech-badge">⚡ JavaScript (ES6+ Mobile Optimization)</div>
+                <div class="tech-badge">🌦 OpenWeather API Integration</div>
+                <div class="tech-badge">📱 Progressive Web App (PWA)</div>
+                <div class="tech-badge">💾 Local Storage API</div>
+            </div>
+
+            <hr class="separator">
+
+            <div class="signature">
+                <p data-i18n="createdBy">Erstellt für das Schulprojekt von</p>
+                <h3>Anna</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 School Helper Pro | Created by Anna</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

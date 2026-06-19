@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Helper Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4A90E2">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🚀 School Helper Pro</div>
+        <div class="nav-links">
+            <a href="index.html" class="active" data-i18n="navHome">Home</a>
+            <a href="tools.html" data-i18n="navTools">Tools</a>
+            <a href="about.html" data-i18n="navAbout">About</a>
+        </div>
+        <div class="nav-controls">
+            <select id="langSelect">
+                <option value="de">🇩🇪 DE</option>
+                <option value="en">🇬🇧 EN</option>
+                <option value="ru">🇷🇺 RU</option>
+            </select>
+            <button id="themeToggle" class="btn-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="banner animate-fade">
+            <h1 data-i18n="welcomeTitle">Willkommen bei School Helper Pro!</h1>
+            <p data-i18n="welcomeSub">Dein digitaler Schulassistent für perfekten Erfolg.</p>
+            <div class="streak-badge" id="streakContainer">
+                🔥 <span data-i18n="streakText">Du lernst bereits seit</span> <strong id="streakCount">0</strong> <span data-i18n="streakDays">Tagen in Folge!</span>
+            </div>
+        </section>
+
+        <section class="grid-2">
+            <div class="card">
+                <h3 data-i18n="dateTimeTitle">Datum & Uhrzeit</h3>
+                <p id="liveClock" class="clock-display">--:--:--</p>
+                <p id="liveDate" class="date-display">--.--.----</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="weatherTitle">Wetter am Campus</h3>
+                <div id="weatherWidget">
+                    <p data-i18n="loading">Lade Wetterdaten...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-2">
+            <div class="card motivation-card">
+                <h3 data-i18n="motivationTitle">Zitat des Tages</h3>
+                <blockquote id="quoteText">"Success is the sum of small efforts repeated day in and day out."</blockquote>
+            </div>
+            <div class="card">
+                <h3 data-i18n="factTitle">Zufälliger Fakt</h3>
+                <p id="factText" class="fact-box">Klicke auf den Button für einen spannenden Fakt!</p>
+                <button id="nextFactBtn" class="btn" data-i18n="factBtn">Nächster Fakt</button>
+            </div>
+        </section>
+
+        <section class="grid-2">
+            <div class="card">
+                <h3 data-i18n="todoTitle">Meine To-Do Liste</h3>
+                <div class="input-group">
+                    <input type="text" id="todoInput" placeholder="Neue Aufgabe...">
+                    <button id="addTodoBtn" class="btn">+</button>
+                </div>
+                <ul id="todoList" class="list-container"></ul>
+            </div>
+
+            <div class="card">
+                <h3 data-i18n="homeworkTitle">Hausaufgaben-Tracker</h3>
+                <div class="input-group vertical">
+                    <input type="text" id="hwSubject" placeholder="Fach (z.B. Mathe)">
+                    <input type="text" id="hwTask" placeholder="Aufgabe">
+                    <input type="date" id="hwDate">
+                    <button id="addHwBtn" class="btn" data-i18n="addBtn">Hinzufügen</button>
+                </div>
+                <ul id="hwList" class="list-container"></ul>
+            </div>
+        </section>
+
+        <section class="card video-section">
+            <h3 data-i18n="videoTitle">Lernvideo des Tages</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lernvideo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 School Helper Pro | Created by Anna</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
